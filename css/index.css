@@ -1,0 +1,93 @@
+.content {
+    position: relative;
+    width: 640px;
+    height: 640px;
+    margin: 100px auto;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 2;
+}
+
+.btn button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: none;
+    border: none;
+    background-size: 100% 100%;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+.pauseBtn {
+    display: none;
+}
+
+.startBtn button {
+    width: 200px;
+    height: 80px;
+    /* background-image: url(../images/long.png); */
+    background-size: cover;
+    margin-left: -100px;
+    margin-top: -40px;
+    color: greenyellow;
+    font-size: 40px;
+}
+
+.pauseBtn button {
+    width: 200px;
+    height: 80px;
+    color: greenyellow;
+    font-size: 40px;
+    /* background-image: url(../images/long.png); */
+    background-size: cover;
+    margin-left: -100px;
+    margin-top: -40px;
+}
+
+#snakeWrap {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background: #bfa;
+    border: 20px solid green;
+}
+
+.snakeHead {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #bfa;
+    border-left: none;
+    border-radius: 0 40% 40% 0;
+    background-color: grey;
+}
+
+.snakeHead::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    width: 2px;
+    height: 6px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.snakeBody {
+    border-radius: 25%;
+    background-color: grey;
+}
+
+.food {
+    background-color: red;
+    border-radius: 50%;
+}
